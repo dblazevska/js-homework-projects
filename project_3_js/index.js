@@ -5,8 +5,17 @@ let x= 1;
 let y=5;  
 let z=-2;  
 
+if ( x == y && x > z){
+    console.log ( x + "," + y + " ," + z);
+}else if (y == z && y > x) {
+    console.log ( y + "," + z + "," + x);
+}else if ( x == y && x < z){
+    console.log (z + "," + x + "," + y );
+}else if ( y == z && y < x) {
+    console.log (x + "," + y + "," + z);
+}
 
-if (x>y && x>z)  
+    if (x>y && x>z)  
 {  
    if (y>z) {  
         console.log(x + ", " + y + ", " +z);  
@@ -41,15 +50,15 @@ let d = 4
 let e = 5
 
 if (a >= b && a >= c & a >= d && a >= e) {
-    console.log (a)
+    console.log (a);
 } else if (b >= a && b >= c & b >= d && b >= e) {
-    console.log (b)
+    console.log (b);
 } else if (c >= b && c >= a & c >= d && c >= e) {
-    console.log (c)
+    console.log (c);
 } else if (d >= b && d >= c & d >= a && d >= e) {
-    console.log (d)
+    console.log (d);
 } else if (e >= b && e >= c & e >= d && e >= a) {
-    console.log (e)
+    console.log (e);
 }
 
     
@@ -140,9 +149,10 @@ if ( st5 < 60 ) {
 
 //4. For a given hour, print out the corresponding greeting (Good morning, Good afternoon, Good evening).
 
-let hour = 20;
+let hour = 0;
 // let hour = 11; we get Good morning
 // let hour = 15; we get Good afternoon
+// let hour 1-5; we get Good evening :) 
 
 if (hour >= 6 && hour < 12) {
     console.log ('Good morning');
@@ -170,10 +180,10 @@ else if (day == 6 || day == 7) {
 
 let month = 'January';
 
-if (month == 'December' || month == 'January' || month == 'February' || month == 'March') {
+if (month == 'December' || month == 'January' || month == 'February' ) {
     console.log ('Winter season');
 }
-if (month == 'April' || month == 'May'|| month == 'June') {
+if (month == 'March' || month == 'April' || month == 'May'|| month == 'June') {
     console.log ('Spring season');
 }
 if (month == 'July' || month == 'August' || month == 'September') {
